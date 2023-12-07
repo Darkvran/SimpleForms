@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "twInit": "npx tailwindcss -i ./public/input.css -o ./public/output.css" 
   },
   "keywords": [],
   "author": "",

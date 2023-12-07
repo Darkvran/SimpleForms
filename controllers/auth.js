@@ -42,7 +42,7 @@ module.exports.register = async function(req, res) {
             res.status(201).json(user);  
         }
         catch(e){
-            //Обработать ошибку
+            console.log(e);
         }
     }
 }

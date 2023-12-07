@@ -12,17 +12,18 @@
     </header>
 
     <main class="flex w-full justify-center">
-        <form class="max-w-sm mx-auto" action="http://26.251.67.229:5000/api/auth/login" method="post">
+        <form class="max-w-sm mx-auto">
             <h2 class="text-lg text-center underline underline-offset-8 mb-2">Авторизация</h2>
+            <p id ="result"></p>
             <div class="mb-2">
               <label for="email" class="block mb-2 text-sm font-medium ">Ваша почта</label>
-              <input type="email" name=email id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="почта@хиханьки.ха" required>
+              <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="почта@хиханьки.ха" required>
             </div>
             <div class="mb-2">
               <label for="password" class="block mb-2 text-sm font-medium">Ваш пароль</label>
-              <input type="password" name=password id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+              <input type="password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
             </div>
-            <button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-1 px-2 border border-gray-400 rounded shadow">Отправить</button>
+            <input type="button" class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-1 px-2 border border-gray-400 rounded shadow" id="sendReqForLog" value = "Отправить">
         </form>
     </main>
 
@@ -36,5 +37,6 @@
         <img src="3.jpg" width="300" height="300">
         <img src="4.jpg" width="300" height="300">
     </footer>
+    <script src="./auth.js"></script>
 </body>
 </html>
